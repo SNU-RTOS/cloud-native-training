@@ -16,74 +16,21 @@
 - **Version Control System (VCS)**: git의 기본 사용법 (stage, commit, push 등)
 - **협업 전략**: branch, tag, GitHub flow, GitLab flow 등
 
-#### 실습
-- C HTTP 서버 코드를 활용하여 3명이 각자 기능을 구현하고 Pull Request를 통해 병합하는 협업 연습
+#### 실습 과제
+현재 있는 server.c 코드 활용하여
+1. "/" 경로에서만 응답이 나오게 만들기
+2. 경로에 없는 페이지에서는 404 Not Found page 만들기
+3. "/rtos" 페이지에서 다른 안내 문구 출력하기
 
----
-
-### 2주차: Jenkins를 통한 CI/CD 기본
-
-#### 개념
-- **CI/CD의 의의**: Continuous Integration과 Continuous Deployment의 차이와 의미
-- **Jenkins의 역할**: 빌드 및 테스트 자동화 도구로서의 활용
-
-#### 실습
-- Jenkins 설치 및 Job 설정
-- GitHub와 연동하여 C HTTP 서버의 빌드와 유닛 테스트 자동화
-- 성공/실패 여부에 따른 알림(email, Slack)
-
----
-
-### 3~4주차: Docker를 통한 컨테이너화
-
-#### 개념
-- **컨테이너의 의의**: 소프트웨어 실행 환경의 표준화
-- **Docker**: 컨테이너 기술의 핵심 도구
-
-#### 실습
-- Docker 기초 명령 학습
-- C HTTP 서버를 Dockerfile로 컨테이너화하여 이미지 생성
-- Jenkins를 통한 빌드 및 Docker Registry 연동
-
----
-
-### 5~6주차: Kubernetes와 Orchestration
-
-#### 개념
-- **Kubernetes 기본 요소**: pod, service, replicaset, deployment, ingress 등의 개념
-- Kubernetes를 활용한 컨테이너 오케스트레이션
-
-#### 실습
-- Minikube를 통해 로컬 클러스터 구축
-- C HTTP 서버 컨테이너를 pod로 실행
-- service 및 deployment 설정을 통해 클러스터 운영
-
----
-
-### 7주차: Kubernetes와 CICD 파이프라인 통합
-
-#### 개념
-- **Kubernetes 업데이트 전략**: Rolling Update, Blue-Green Deployment 등
-- **CI/CD 파이프라인 전체 흐름**: 코드 변경 → Git push → Jenkins 빌드 → Docker 이미지 생성 → Kubernetes 업데이트
-
-#### 실습
-- Git push 시 Jenkins에서 빌드 → Docker Registry 등록 → Kubernetes 배포로 이어지는 파이프라인 완성
+이를 3명이 브랜치를 활용하여 나눈 이후에 합친 이후 step1 브랜치에 push하기
 
 ---
 
 ## 사용법
 
 1. **C HTTP 서버 실행**
-   - [서버 코드](./server.c)를 참고하여 서버를 빌드하고 실행합니다.
-   - `gcc server.c -o server && ./server`를 통해 로컬에서 서버를 확인할 수 있습니다.
-
-2. **실습 환경 준비**
-   - Docker 및 Kubernetes 설치: [Docker 설치 가이드](https://docs.docker.com/get-docker/), [Minikube 설치 가이드](https://minikube.sigs.k8s.io/docs/start/)
-   - Jenkins 설치: [Jenkins 설치 가이드](https://www.jenkins.io/doc/book/installing/)
-
-3. **교육 진행**
-   - 각 실습 내용을 참고하여 Git, CI/CD, Docker, Kubernetes 등을 체험합니다.
-   - 각 과정의 실습과제를 수행하며 Cloud Native 개발 환경을 이해합니다.
+  - [서버 코드](./server.c)를 참고하여 서버를 빌드하고 실행합니다.
+  - `gcc server.c -o server && ./server`를 통해 로컬에서 서버를 확인할 수 있습니다.
 
 ---
 
