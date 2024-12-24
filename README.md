@@ -10,7 +10,7 @@
 
 ## 교육 과정 개요
 
-### 1주차: Git & Branch 전략
+### 1~2주차: Git & Branch 전략
 
 #### 개념
 - **Version Control System (VCS)**: git의 기본 사용법 (stage, commit, push 등)
@@ -18,19 +18,6 @@
 
 #### 실습
 - C HTTP 서버 코드를 활용하여 3명이 각자 기능을 구현하고 Pull Request를 통해 병합하는 협업 연습
-
----
-
-### 2주차: Jenkins를 통한 CI/CD 기본
-
-#### 개념
-- **CI/CD의 의의**: Continuous Integration과 Continuous Deployment의 차이와 의미
-- **Jenkins의 역할**: 빌드 및 테스트 자동화 도구로서의 활용
-
-#### 실습
-- Jenkins 설치 및 Job 설정
-- GitHub와 연동하여 C HTTP 서버의 빌드와 유닛 테스트 자동화
-- 성공/실패 여부에 따른 알림(email, Slack)
 
 ---
 
@@ -60,7 +47,20 @@
 
 ---
 
-### 7주차: Kubernetes와 CICD 파이프라인 통합
+### 7주차: GitHub Actions를 통한 CI/CD 기본
+
+#### 개념
+- **CI/CD의 의의**: Continuous Integration과 Continuous Deployment의 차이와 의미
+- **GitHub Actions의 역할**: 빌드 및 테스트 자동화 도구로서의 활용
+
+#### 실습
+- GitHub Actions 설치 및 Workflow 설정
+- GitHub와 연동하여 C HTTP 서버의 빌드와 유닛 테스트 자동화
+- 성공/실패 여부에 따른 알림(email, Slack)
+
+---
+
+### 8주차: Kubernetes(K3s)와 CICD 파이프라인 통합
 
 #### 개념
 - **Kubernetes 업데이트 전략**: Rolling Update, Blue-Green Deployment 등
