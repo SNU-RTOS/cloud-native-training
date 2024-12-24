@@ -88,9 +88,10 @@
 ---
 
 ## 프로젝트 구조
-
+```
 ├── .github/workflows # github action 관련 설정 파일 
 ├── kubernetes/ # Kubernetes 관련 YAML 파일 
 ├── server.c # C HTTP 서버 코드 
 ├── Dockerfile # 컨테이너 이미지를 생성하기 위한 Dockerfile 
 └── README.md # 프로젝트 안내 파일
+```
