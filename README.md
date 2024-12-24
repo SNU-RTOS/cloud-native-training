@@ -1,4 +1,4 @@
-# SNU RTOS LAB Cloud Native 교육 과정 안내
+# SNU RTOS LAB Cloud Native 교육
 
 이 프로젝트는 간단한 C HTTP 서버를 활용하여 Cloud Native 방법론의 기본 요소인 **Git**, **CI/CD**, **컨테이너화**, 그리고 **Kubernetes**를 학습하기 위한 교육 과정입니다. 
 
